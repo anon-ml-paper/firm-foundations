@@ -32,27 +32,5 @@ pip install firm-foundations
 ```
 
 ## Quickstart
-We maintain a collection of starter scripts in our codebase under ``experiments/``. If you are creating a new attack, we recommend making a copy of a starter script for a solid template.
 
-```
-python experiments/mia/run_loss.py --model_name EleutherAI/pythia-70m-deduped --model_revision step98000 --num_samples 2000 --pack --seed 229
-```
-
-```
-bash scripts/pretrain_mia_baselines.sh
-```
-
-## Contributing
-We welcome contributions! Please submit pull requests in our [GitHub](https://github.com/ANONYMOUS/firm-foundations).
-
-
-## Citation
-
-If you use our code or otherwise find this library useful, please cite:
-
-```
-@article{anon2025firm,
-  title={Firm Foundations for Membership Inference Attacks Against Large Language Models},
-  author={ANONYMOUS},
-  year={2025}
-}
+See `scripts/mia_baselines.sh`.
