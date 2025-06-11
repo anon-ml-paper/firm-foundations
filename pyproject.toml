@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firm_foundations"
+version = "0.1.0"
+description = "Firm foundations for membership inference attacks against large language models"
+authors = [
+    {name = "ANONYMOUS"},
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["red-teaming", "privacy", "large language model", "membership inference attack", "extraction"]
+classifiers = [
+  "Programming Language :: Python"
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+firm-foundations = "firm_foundations:membership_inference_entry_point"
